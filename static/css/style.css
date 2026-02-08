@@ -208,37 +208,58 @@ h2 {
 .card_botao a:hover {
   transform: scale(1.1);
   box-shadow: 0 8px 25px rgba(168, 144, 6, 0.5);
+}.cardl {
+    background-color: #6a261d;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    max-width: 300px;
+    min-height: 550px; /* Altura mínima para todos os cards */
+    
+    /* Ativa o Flexbox para alinhar os itens internamente */
+    display: flex;
+    flex-direction: column;
 }
 
+/* Garante que o texto seja legível sobre o fundo marrom/vermelho */
+.cardl_titulo h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.cardl_texto p {
+    color: #f1f1f1; /* Branco levemente acinzentado para não cansar a vista */
+}
+
+/* O SEGREDO: Faz a área do texto esticar e empurrar o botão */
+.cardl_texto {
+    flex-grow: 1;      /* Ocupa todo o espaço disponível no meio */
+    overflow-y: auto;  /* Ativa a rolagem se o texto for muito grande */
+    margin-bottom: 20px;
+    padding-right: 5px; /* Espaço para a barra de rolagem não cobrir o texto */
+}
+
+/* Garante que o botão fique sempre no final */
+.cardl_botao {
+    margin-top: auto; 
+}
+
+/* Estilização da barra de rolagem */
+.cardl_texto::-webkit-scrollbar {
+    width: 6px;
+}
+
+.cardl_texto::-webkit-scrollbar-thumb {
+    background-color: #ffffff44; /* Barra semi-transparente para combinar com o tema */
+    border-radius: 10px;
+}
 .titulo_cate{
   justify-self: center;
   padding-top: 15px;
   color: #3f4264;
 }
 
-.botao_cont{
-  background-color: #663303;
-  padding: 20px;
-  border: solid 1px #c58607; 
-  cursor: pointer;
-  border-radius: 100%;
-  transition: 0.3s;
-  font-size: xx-large;
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  z-index: 1;
-}
-
-.botao_cont i {
-  color: #1E1E1E;
-
-}
-
-.botao_cont:hover{
-  transform: scale(1.1);
-  box-shadow: 0 8px 25px rgba(168, 144, 6, 0.897)15;
-}
 
 .main-footer {
   background-color: #000000;

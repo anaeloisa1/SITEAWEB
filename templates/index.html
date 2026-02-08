@@ -114,11 +114,6 @@
         </div>
     </section>
 
-
-    <div class="botao_cont">
-        <a href="{{ url_for('cadastro_conteudo') }}"><i class="fa-solid fa-plus"></i></a>
-    </div>
-
     <!-- Alterar para livros -->
 
 <section id="livro">
@@ -126,7 +121,7 @@
 
     <div class="container">
         {% for bdcard in livros %}
-        <div class="card">
+        <div class="cardl">
             <div class="card_img">
                 <img src="{{ url_for('static', filename='img/' + bdcard.CapaPath) }}" alt="Capa">
             </div>
@@ -137,7 +132,7 @@
                 <p>{{ bdcard.Sinopse }}</p>
             </div>
             <div class="card_botao">
-                <a href="{{ url_for('pdf', idconteudo=bdcard.ID_Conteudo) }}">Conheça!</a>
+                <a href="{{ url_for('arquivo', idconteudo=bdcard.ID_Conteudo) }}">Conheça!</a>
             </div>
         </div>
         {% endfor %}
