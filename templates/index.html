@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Che Guevara | Histórico</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="C:\Users\ASUS\Documents\GitHub\SITEAWEB\static\style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+   <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="C:\Users\ASUS\Documents\GitHub\SITEAWEB\static\img\logo.jpg" alt="Logo Che Guevara" class="navbar-logo me-2"> 
+            CHE GUEVARA
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto"> <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-regular fa-house"></i> Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre"><i class="fa-regular fa-file"></i> Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#catego"><i class="fa-solid fa-skull-crossbones"></i> Batalhas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#livro"><i class="fa-solid fa-book"></i> Livros</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="hero-section text-center">
+    <div class="container">
+        <h1>Patria o Muerte</h1>
+    </div>
+</header>
+
+<section id="sobre">
+        <h1 style="margin: 20px;">Sobre</h1>
+        <p class="text-sobre">Ernesto "Che" Guevara nascido em 14 de junho de 1928 na Argentina foi um médico, político e estrategista militar argentino que se tornou uma das 
+            figuras centrais da Revolução Cubana e um símbolo global de rebeldia. Sua trajetória começou a mudar radicalmente durante 
+            suas viagens de juventude pela América Latina, onde o contato direto com a miséria e a exploração das classes trabalhadoras o 
+            convenceu de que apenas uma luta armada continental poderia derrubar o sistema capitalista e o imperialismo.</p>
+        <p class="text-sobre">Após conhecer Fidel Castro no México, Che uniu-se ao Movimento 26 de Julho e desembarcou em Cuba, 
+            onde se destacou por sua disciplina rígida e tática guerrilheira, sendo fundamental para a vitória dos revolucionários em 
+            1959. No novo governo cubano, ele exerceu cargos de alta relevância, como ministro e presidente do Banco Nacional, além de 
+            representar o país diplomaticamente com um discurso feroz contra a hegemonia dos Estados Unidos. No entanto, sua natureza 
+            inquieta e seu desejo de exportar a revolução o levaram a abandonar Cuba para lutar no Congo e, posteriormente, na Bolívia. 
+            Foi em solo boliviano que sua estratégia de guerrilha falhou ao não conseguir o apoio esperado da população local, culminando 
+            em sua captura e execução por forças bolivianas auxiliadas pela CIA em 1967. Até hoje, o legado de Che Guevara é profundamente 
+            polarizado: enquanto para muitos ele representa o idealismo e a resistência contra a injustiça social, para outros sua memória 
+            está ligada ao autoritarismo e à violência política.</p>
+    </section>
+
+    <section id="catego">
+        <h1 id="categorias-title">Principais batalhas</h1>
+        <div class="container">
+            <div class="card">
+                <div class="card_titulo">
+                    <h3>A Batalha de Santa Clara</h3>
+                </div>
+                <div class="card_texto">
+                    <p>
+                        A Batalha de Santa Clara foi uma série de eventos no final de dezembro de 1958 que levou à libertação da 
+                        cidade cubana de Santa Clara por revolucionários sob o comando de Che Guevara.
+
+
+                    </p>
+                </div>
+                <div class="card_botao">
+                    <a href="https://dicassobrecuba.com.br/santa-clara/a-batalha-de-santa-clara/" target="_blank">Saiba mais</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_titulo">
+                    <h3>Combate de El Uvero</h3>
+                </div>
+                <div class="card_texto">
+                    <p>
+                       Foi a primeira grande vitória militar da guerrilha na Sierra Maestra. Embora o grupo fosse pequeno, 
+                       o ataque bem-sucedido a um posto militar fortificado elevou a
+                        moral dos rebeldes e provou que eles podiam derrotar o exército oficial em campo aberto.
+                    </p>
+                </div>
+                <div class="card_botao">
+                    <a href="https://pt.wikipedia.org/wiki/Combate_de_El_Uvero" target="_blank">Saiba
+                        mais</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_titulo">
+                    <h3>Combate da Quebrada del Yuro</h3>
+                </div>
+                <div class="card_texto">
+                    <p>
+                        Esta foi a sua batalha final. Cercado em um desfiladeiro pelo exército boliviano, o grupo de Che foi dizimado após meses de 
+                        isolamento. Guevara foi ferido e capturado nesta ocasião, sendo executado no dia seguinte.
+                    </p>
+                </div>
+                <div class="card_botao">
+                    <a href="https://o-boto.com/blog/1967-bolivia-o-resumo-de-uma-luta" target="_blank">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="botao_cont">
+        <a href="{{ url_for('cadastro_conteudo') }}"><i class="fa-solid fa-plus"></i></a>
+    </div>
+
+    <!-- Alterar para livros -->
+
+<section id="livro">
+    <h2 id="livros-title">Livros</h2>
+
+    <div class="container">
+        {% for bdcard in livros %}
+        <div class="card">
+            <div class="card_img">
+                <img src="{{ url_for('static', filename=bdcard.CapaPath) }}" alt="Capa do livro">
+            </div>
+            <div class="card_titulo">
+                <h3>{{ bdcard.Titulo }}</h3>
+            </div>
+            <div class="card_texto">
+                <p>{{ bdcard.Sinopse }}</p>
+            </div>
+            <div class="card_botao">
+                <a href="{{ url_for('arquivo', idconteudo=bdcard.ID_Conteudo) }}">Conheça!</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <a class="pag_cont" href="{{ url_for('pag_conteudos', tipo='livro') }}"><button>Livros</button></a>
+</section>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-column info-column">
+                <h3>CHE GUEVARA</h3>
+                <p class="frase-footer">¡Hasta la victoria siempre!</p>
+
+            </div>
+
+            <div>
+                <h4>MAPA DO SITE</h4>
+
+                <ul class="LINK">
+                    <li><a href="#">Início </a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#catego">Batalhas</a></li>
+                    <li><a href="#livro">Livros</a></li>
+                    
+
+
+                </ul>
+            </div>
+
+    </footer>
+
+</body>
+</html>
+

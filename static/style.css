@@ -1,0 +1,311 @@
+/* Custom Styles for Che Guevara Blog */
+
+:root {
+    --primary-red: #9e1b1b;
+    --dark-grey: #212121;
+    --paper-white: #f4f1ea;
+    --accent-gold: #c5a059;
+}
+
+body {
+    background-color: var(--paper-white);
+    color: var(--dark-grey);
+    font-family: 'serif';
+}
+
+/* Navbar Estilizada */
+.navbar {
+    border-bottom: 4px solid var(--primary-red);
+    background-color: #000 !important;
+}
+.navbar-logo {
+    width: 50px; /* Largura da logo */
+    height: 50px; /* Altura da logo */
+    border-radius: 50%; /* Faz a imagem ficar redonda */
+    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorcer */
+    border: 2px solid var(--primary-red); /* Borda opcional */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Sombra suave */
+}
+
+.navbar-brand {
+    letter-spacing: 2px;
+    font-weight: 900;
+    color: var(--primary-red) !important;
+}
+
+/* Estilização dos links da Nav */
+.navbar-nav .nav-link {
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    transition: 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-red) !important;
+    border-bottom: 2px solid var(--primary-red);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--primary-red) !important;
+}
+
+/* Ajuste para o botão do menu no mobile */
+.navbar-toggler {
+    border-color: var(--primary-red);
+}
+
+/* Hero Section com efeito de "pôster" */
+/* Hero que ocupa a tela toda */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://i.pinimg.com/736x/de/b1/47/deb147404cd1451c075fc2d1f9cd00a5.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* Efeito Parallax opcional: a imagem fica fixa ao rolar */
+    
+    min-height: 100vh; /* Ocupa 100% da altura da tela */
+    display: flex; /* Ativa o flexbox */
+    flex-direction: column; /* Organiza os itens em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: -56px; /* Se sua navbar for fixa, isso compensa o espaço dela */
+}
+
+.hero-section h1 {
+    font-size: calc(2rem + 4vw); /* Fonte responsiva que cresce conforme a tela */
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 0px var(--primary-red);
+    margin-bottom: 20px;
+}
+
+#sobre, #acess-conteudos, #pod-title, #livros-title, #videos-title , #artigos-title , #categorias-title{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  color: hsl(5, 87%, 19%);
+  margin: 50px;
+}
+
+#acess-conteudos{
+  text-decoration: underline;
+}
+
+#sobre h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+.text-sobre {
+  font-size: 20px;
+  margin-bottom: 0px;
+  max-width: 1200px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  height: auto;
+}
+
+.text_infos {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 40px 0 10px 0;
+  text-align: left;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  flex-direction: row;
+}
+
+.card {
+  width: 300px;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  background-color: #6a261d;
+  box-shadow: 0 4px 8px rgba(228, 223, 223, 0.2);
+  overflow: hidden;
+  margin: 16px;
+  padding-bottom: 10px;
+  transition: 0.3s;
+  border: none;
+  text-align: justify;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card_img {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.card_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card_titulo {
+  color: #f0f0f3;
+  text-align: center;
+  margin: 10px 15px 5px 15px;
+}
+
+.card_titulo h3 {
+  margin: 0;
+}
+
+.card_texto {
+  flex-grow: 1;
+  margin: 0 20px 10px 20px;
+  overflow: auto;
+  scrollbar-width: thin;
+    color: #ffffff;
+  scrollbar-color: #ffffff transparent;
+}
+
+.card_botao {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.card_botao a {
+  background-color: #000000;
+  color: rgb(246, 238, 248);
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.card_botao a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(168, 144, 6, 0.5);
+}
+
+.titulo_cate{
+  justify-self: center;
+  padding-top: 15px;
+  color: #3f4264;
+}
+
+.botao_cont{
+  background-color: #663303;
+  padding: 20px;
+  border: solid 1px #c58607; 
+  cursor: pointer;
+  border-radius: 100%;
+  transition: 0.3s;
+  font-size: xx-large;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1;
+}
+
+.botao_cont i {
+  color: #1E1E1E;
+
+}
+
+.botao_cont:hover{
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(168, 144, 6, 0.897)15;
+}
+
+.main-footer {
+  background-color: #000000;
+  color: #9e1b1b;
+  padding: 30px 0 20px 0;
+  font-family: 'roboto';
+  position: relative; 
+  z-index: 10;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  max-width: 50%; 
+  margin: 0 auto;
+  padding: 0 20px;
+  border-bottom: 1px solid #9e1b1b(255, 255, 255, 0.1); 
+}
+
+
+.footer-column {
+  padding: 20px;
+  margin: 10px;
+  min-width: 250px; 
+  flex-grow: 1; 
+}
+
+.footer-column h3, .footer-column h4 {
+  color: #9e1b1b; 
+  margin-bottom: 15px;
+  text-transform:none;
+}
+
+footer ul {
+  margin-top: 20px;
+  text-decoration:underline;
+}
+
+#heroo, #sobre, #livros, #catego {
+  scroll-margin-top: 100px;
+}
+
+
+.LINK li a {
+  text-decoration: none; 
+  color: #f9f9f9; 
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+
+.LINK li a:hover {
+    font-size: 15px;
+  color: #9e1b1b; 
+  cursor: pointer; 
+  font-size: 15;
+  border-radius: 3px;
+}
+
+.frase-footer {
+  font-size: 25px;
+  margin-bottom: 0px;
+  max-width: 1200px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  color: #9e1b1b;
+}
