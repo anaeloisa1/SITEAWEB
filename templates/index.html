@@ -6,14 +6,14 @@
     <title>Blog Che Guevara | Histórico</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="C:\Users\ASUS\Documents\GitHub\SITEAWEB\static\style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
    <div class="container">
         <a class="navbar-brand" href="#">
-            <img src="C:\Users\ASUS\Documents\GitHub\SITEAWEB\static\img\logo.jpg" alt="Logo Che Guevara" class="navbar-logo me-2"> 
+            <img src="{{ url_for('static', filename='img/logo.jpg') }}" alt="Logo Che Guevara" class="navbar-logo me-2"> 
             CHE GUEVARA
         </a>
 
@@ -128,7 +128,7 @@
         {% for bdcard in livros %}
         <div class="card">
             <div class="card_img">
-                <img src="{{ url_for('static', filename=bdcard.CapaPath) }}" alt="Capa do livro">
+                <img src="{{ url_for('static', filename='img/' + bdcard.CapaPath) }}" alt="Capa">
             </div>
             <div class="card_titulo">
                 <h3>{{ bdcard.Titulo }}</h3>
@@ -137,7 +137,7 @@
                 <p>{{ bdcard.Sinopse }}</p>
             </div>
             <div class="card_botao">
-                <a href="{{ url_for('arquivo', idconteudo=bdcard.ID_Conteudo) }}">Conheça!</a>
+                <a href="{{ url_for('pdf', idconteudo=bdcard.ID_Conteudo) }}">Conheça!</a>
             </div>
         </div>
         {% endfor %}

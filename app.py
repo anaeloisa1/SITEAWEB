@@ -33,7 +33,7 @@ def cadastro_conteudo():
     return "<h1>Página de Cadastro</h1><p>Em breve você poderá cadastrar livros aqui.</p>"
 
 @app.route('/arquivo/<int:idconteudo>')
-def arquivo(idconteudo):
+def pdf(idconteudo):
     # Rota para a página individual do livro
     return f"Página do livro com ID: {idconteudo}"
 
@@ -55,7 +55,7 @@ if __name__ == '__main__':
                 ID_Conteudo=1, 
                 Titulo="Diários de Motocicleta", 
                 Sinopse="O relato das viagens de Ernesto Guevara pela América Latina.", 
-                CapaPath="diarios.jpg" # O arquivo deve estar em static/diarios.jpg
+                CapaPath="capas.jpg" # O arquivo deve estar em static/diarios.jpg
             )
             db.session.add(exemplo)
             db.session.commit()
