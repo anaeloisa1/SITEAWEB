@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que é Comunismo | História</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="bg-dark text-white"> <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #000;">
+   <div class="container">
+        <a class="navbar-brand" href="{{ url_for('index') }}">
+            <img src="{{ url_for('static', filename='img/logo.jpg') }}" alt="Logo" class="navbar-logo me-2" style="height: 40px;"> 
+            CHE GUEVARA
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('index') }}">Início</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h1 class="text-danger mb-4 border-bottom border-danger pb-1 text-uppercase">O que é Comunismo?</h1>
+            
+            <p class="lead">No século XIX, em meio às profundas transformações e crises sociais que assolavam a Europa, 
+                diversos intelectuais passaram a formular alternativas ao modelo econômico vigente. Entre essas propostas, 
+                o comunismo emergiu como o pilar central da teoria marxista, oferecendo uma nova perspectiva política e econômica 
+                em oposição ao capitalismo. Esse movimento ganhou força com a Revolução Industrial, que embora tenha impulsionado 
+                o desenvolvimento tecnológico, mergulhou grande parte da população em um cenário de miséria e exploração severa.</p>
+                <p class="lead">Dentro da corrente do socialismo científico, Karl Marx e Friedrich Engels estabeleceram que a história da 
+                    humanidade é definida pela luta de classes, um conflito perpétuo entre uma classe opressora e uma oprimida. 
+                    Na sociedade capitalista, essa divisão se manifesta entre a burguesia, que detém os meios de produção e a 
+                    riqueza, e o proletariado, que possui apenas sua força de trabalho. Para Marx, o trabalhador é reduzido a 
+                    uma mercadoria, submetido às oscilações do mercado e vigiado dentro das fábricas como um servo do lucro e do 
+                    Estado burguês.</p>
+                <p class="lead">O socialismo marxista propõe a abolição da propriedade privada e a socialização dos meios de produção como 
+                    caminhos para encerrar a exploração do trabalho. Segundo essa teoria, quando o proletariado despertar sua 
+                    consciência de classe e se organizar para assumir o poder, será possível administrar o sistema de forma justa 
+                    e coletiva. Com a eliminação das desigualdades sociais, as classes e o próprio Estado deixariam de existir, 
+                    preparando o terreno para a implementação plena do sistema comunista.</p>
+                
+            <br>
+            <div class="card bg-secondary text-white mb-7 border-0">
+                <div class="card-body">
+                    <h5 class="card-title text-light mb-4 border-danger">Principais Nomes:</h5>
+                    <ul>
+                        <li>Che Guevara;</li>
+                        <li>Fidel Castro;</li>
+                        <li>Vladimir Lenin;</li>
+                        <li>Karl Marx;</li>
+                        <li>Mao Tsé-Tung;</li>
+                        <li>Ho Chi Minh.</li>
+                        
+                    </ul>
+                </div>
+            
+            </div>
+  
+ 
+
+      
+            
+            <a href="{{ url_for('index') }}" class="btn btn-outline-danger">← Voltar</a>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

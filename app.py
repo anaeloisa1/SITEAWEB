@@ -42,11 +42,9 @@ def arquivo(idconteudo):
     except FileNotFoundError:
         return "<h1>Erro: Arquivo PDF não encontrado na pasta static/pdf/</h1>", 404
 
-@app.route('/conteudos/<tipo>')
-def pag_conteudos(tipo):
-    """Rota para a página de listagem geral (evita o BuildError)"""
-    livros_filtrados = Livro.query.all()
-    return render_template('index.html', livros=livros_filtrados, tipo=tipo)
+@app.route('/comunismo')
+def comunismo():
+    return render_template('comunismo.html')
 
 # --- INICIALIZAÇÃO ---
 if __name__ == '__main__':
