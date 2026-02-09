@@ -25,6 +25,7 @@ body {
     object-fit: cover; /* Garante que a imagem preencha o círculo sem distorcer */
     border: 2px solid var(--primary-red); /* Borda opcional */
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Sombra suave */
+    max-height:50px
 }
 
 .navbar-brand {
@@ -57,6 +58,7 @@ body {
 .navbar-toggler {
     border-color: var(--primary-red);
 }
+
 
 /* Hero Section com efeito de "pôster" */
 /* Hero que ocupa a tela toda */
@@ -94,9 +96,6 @@ body {
   margin: 50px;
 }
 
-#acess-conteudos{
-  text-decoration: underline;
-}
 
 #sobre h1 {
   font-size: 80px;
@@ -215,7 +214,7 @@ h2 {
     text-align: center;
     margin: 10px;
     max-width: 300px;
-    min-height: 550px; /* Altura mínima para todos os cards */
+    max-height: 700px; /* Altura mínima para todos os cards */
     
     /* Ativa o Flexbox para alinhar os itens internamente */
     display: flex;
